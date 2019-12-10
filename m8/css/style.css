@@ -1,0 +1,126 @@
+@import "../lib/normalize.css";
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-cyrillic_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-cyrillic_latin-regular.woff') format('woff'), /* Modern Browsers */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Roboto Italic'), local('Roboto-Italic'),
+         url('../fonts/roboto-v20-cyrillic_latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-cyrillic_latin-italic.woff') format('woff'), /* Modern Browsers */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+         url('../fonts/roboto-v20-cyrillic_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-cyrillic_latin-700.woff') format('woff'), /* Modern Browsers */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'),
+         url('../fonts/roboto-v20-cyrillic_latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-cyrillic_latin-700italic.woff') format('woff'), /* Modern Browsers */
+  }
+*{
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 16px;
+}
+.main-header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 160px;
+    width: 100%;
+    margin: 0 auto;
+    background: #c2c2c2;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+}
+.logo-img{
+    height: 120px;
+    width: 120px;
+    border-radius: 120px;
+}
+.logo-name{
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0 auto;
+}
+.logo-link{
+    text-decoration: none;
+    color: #000;
+}
+.menu{
+    margin: auto 0;
+}
+.menu-list{
+    list-style: none;
+    display: flex;
+}
+.menu-list-item{
+    padding: 10px 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s;
+}
+.menu-list-item:hover{
+    transition: 0.4s;
+    border-bottom: 2px solid orange;
+}
+.menu-link{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff;
+}
+.slider{
+    height: 600px;
+    width: 100%;
+    background: red;
+}
+.skills{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills-item{
+    height: 400px;
+    width: 400px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.skills-item-img{
+    height: 60px;
+    width: 60px;
+}
+.skills-item-caption{
+    padding: 0 20px;
+    text-align: center;
+}
+.test{
+    width: 60px;
+    height: 60px;
+    background: 120px, 120px url('../icons/icon.png') no-repeat;
+}
